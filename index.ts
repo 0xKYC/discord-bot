@@ -1,8 +1,9 @@
 
-const dotenv = require('dotenv');
+import dotenv from 'dotenv';
 dotenv.config();
+
 // Require the necessary discord.js classes
-const { Client, Events, GatewayIntentBits } = require('discord.js');
+import { Client, Events, GatewayIntentBits } from 'discord.js';
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
